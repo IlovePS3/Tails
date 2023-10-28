@@ -7,6 +7,6 @@
     {
         public const string GUID = "com.ps3.gorillatag.tails";
         public const string Name = "Tails";
-        public const string Version = "1.0.0";
+        public const string Version = "1.0.1";
     }
 }

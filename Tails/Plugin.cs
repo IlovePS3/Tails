@@ -84,18 +84,32 @@ namespace Tails
         }
         public override void OnPlayerEnteredRoom(Player newPlayer)
         {
-            if (newPlayer.CustomProperties.ContainsKey("Tail") && !people.ContainsKey(newPlayer))
+            try
             {
-                people.Add(newPlayer, MakeOtherTail(newPlayer));
+                if (newPlayer.CustomProperties.ContainsKey("Tail") && !people.ContainsKey(newPlayer))
+                {
+                    people.Add(newPlayer, MakeOtherTail(newPlayer));
+                }
+                TempTail = null;
             }
-            TempTail = null;
+            catch
+            {
+                Debug.Log("Something Went Wrong In getting tails");
+            }
         }
         public override void OnPlayerLeftRoom(Player otherPlayer)
         {
-            if(people.ContainsKey(otherPlayer)) 
+            try
             {
-                Destroy(people[otherPlayer].gameObject);
-                people.Remove(otherPlayer);
+                if (people.ContainsKey(otherPlayer))
+                {
+                    Destroy(people[otherPlayer].gameObject);
+                    people.Remove(otherPlayer);
+                }
+            }
+            catch
+            {
+                Debug.Log("Failed to check/reset Tails");
             }
         }
         public override void OnLeftRoom()
