@@ -7,4 +7,4 @@ This product is not affiliated with Gorilla Tag or Another Axiom LLC and is not 
 
 "Meif'wa Tail 2" (https://skfb.ly/oyOML) by DecayingTrashRat is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-Contains Scripts from [DynamicBones](https://assetstore.unity.com/packages/tools/animation/dynamic-bone-16743) that i Own and have the rights to use
+Contains Scripts from [DynamicBones](https://assetstore.unity.com/packages/tools/animation/dynamic-bone-16743) that I Purchased
